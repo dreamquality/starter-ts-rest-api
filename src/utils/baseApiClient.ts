@@ -147,6 +147,10 @@ export class BaseApiClient {
     return this.makeRequest<T>('PATCH', url, data);
   }
 
+  public async put<T>(url: string, data?: any): Promise<T> {
+    return this.makeRequest<T>('PUT', url, data);
+  }
+
   public async delete<T>(url: string): Promise<void> {
     await this.makeRequest<T>('DELETE', url);
   }
