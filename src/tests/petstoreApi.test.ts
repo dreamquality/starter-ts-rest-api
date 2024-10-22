@@ -15,7 +15,7 @@ describe('Petstore API Tests', () => {
     expect(response.name).toBe('Fluffy');
 
     pet = new DataBuilder().updatePetStatus('sold').buildPet();
-    response = await apiClient.patch<Pet>(`/pet/${response.id}`, { status: pet.status });
+    response = await apiClient.put<Pet>(`/pet/${response.id}`, { status: pet.status });
     expect(response.status).toBe('sold-');
 
     await apiClient.delete<void>(`/pet/${response.id}`);
