@@ -1,0 +1,10 @@
+{
+  "date": "Tue, 22 Oct 2024 11:14:41 GMT",
+  "content-type": "application/json",
+  "transfer-encoding": "chunked",
+  "connection": "close",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, DELETE, PUT",
+  "access-control-allow-headers": "Content-Type, api_key, Authorization",
+  "server": "Jetty(9.2.9.v20150224)"
+}
